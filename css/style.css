@@ -547,7 +547,8 @@ img {
   position: relative;
 }
 .blog-section-name,
-.product-section-name {
+.product-section-name,
+.nl-section-name {
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
@@ -802,4 +803,88 @@ img {
 
 .read-more-button:hover {
   background-color: rgb(156, 197, 188);
+}
+
+.newsletter {
+  height: 462px;
+  background-color: rgb(78, 198, 171);
+  background-image: url(../img/newsletter57.webp);
+  position: relative;
+}
+
+.nl-section-name {
+  padding-top: 100px;
+}
+.nl-section-name::after {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/title-border-white.svg);
+  background-color: rgb(26, 188, 156);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 164px;
+  height: 15px;
+  position: absolute;
+  right: 50%;
+  top: 162px;
+  transform: translateX(50%);
+}
+
+.nl-info {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: rgb(255, 255, 255);
+  line-height: 1.625;
+  text-align: center;
+  width: 500px;
+  height: 17px;
+  position: absolute;
+  right: 50%;
+  top: 209px;
+  transform: translateX(50%);
+}
+.next:hover .nl-next-img,
+.next:focus .nl-next-img {
+  background-color: rgb(156, 197, 188);
+}
+.nl-subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  top: 267px;
+  transform: translateX(-50%);
+}
+/* .next{position: relative;} */
+.nl-next-img {
+  display: block;
+  width: 89px;
+  height: 56px;
+  background-color: rgb(78, 198, 171);
+  overflow: hidden;
+  border-radius: 2px;
+  border-color: white;
+  transform: translateX(-2px);
+  /* position: absolute; */
+  /* top: 1px; */
+}
+.nl-mail {
+  /* width: 445px; */
+  border: 0;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: rgb(85, 82, 82);
+  line-height: 1.625;
+  text-align: left;
+  margin-left: 30px;
+  width: 100%;
+  /* width: 148px; */
+  /* height: 17px; */
 }
